@@ -49,8 +49,8 @@ dotnet add package IAudioManager
   - **Info.plist:**
    
   ```xml
-  	<key>NSCameraUsageDescription</key>
-	<string>This app needs access to the camera to take photos.</string>
+  <key>NSCameraUsageDescription</key>
+  <string>This app needs access to the camera to take photos.</string>
   ```
 
 ## MauiProgram.cs
