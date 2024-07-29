@@ -1,4 +1,4 @@
-# .Net MAUI QR Code Scanner
+# .Net MAUI QR - Barcode Scanner
 
 Bu proje, QR kodlarını tarayabilen ve taranan koda göre farklı sesler oynatabilen bir mobil uygulamadır. Uygulama, QR kodu içeriğine göre belirli ses dosyalarını çalar ve kullanıcıya QR kodun formatı ve değeri hakkında bilgi verir.
 
