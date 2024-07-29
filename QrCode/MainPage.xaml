@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QrCode.MainPage"
+           xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             Title="QR - Barcode Scanner"
+             BackgroundImageSource="bg.jpg">
+
+   
+        <VerticalStackLayout Padding="30,30" Margin="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+            <VerticalStackLayout Padding="60" Margin="0,0,0,50">
+                <Label
+      x:Name="QRDeger"
+      Style="{StaticResource SubHeadline}"
+      TextColor="{DynamicResource White}"
+      HorizontalTextAlignment="Center"
+      VerticalTextAlignment="Center"
+      FontSize="Medium" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="300" HeightRequest="200">
+                <zxing:CameraBarcodeReaderView
+                x:Name="barcodeReader"
+                BarcodesDetected="barcodeReader_BarcodesDetected" 
+                WidthRequest="300" 
+                HeightRequest="200"
+                HorizontalOptions="StartAndExpand" 
+                VerticalOptions="StartAndExpand">
+
+                </zxing:CameraBarcodeReaderView>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Padding="110" WidthRequest="500" Spacing="20">
+                <Button 
+        x:Name="CopyBtn"
+        Text="Taranan Değeri Kopyala"
+        Clicked="CopyClicked"
+        HorizontalOptions="Fill"
+        VerticalOptions="End"
+        BackgroundColor="{DynamicResource PrimaryColor}"
+        TextColor="White" />
+
+                <Button 
+        Clicked="DondurClicked"
+        Text="Kamerayı Döndür"
+        HorizontalOptions="Fill"
+        VerticalOptions="End"
+        Margin="0,0,0,100" />
+            </VerticalStackLayout>
+
+
+        </VerticalStackLayout>
+
+
+</ContentPage>
