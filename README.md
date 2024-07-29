@@ -45,8 +45,8 @@ dotnet add package IAudioManager
   ```xml
   <uses-permission android:name="android.permission.CAMERA" />
   ```
-  
-  - **Info.plist:**
+
+- **Info.plist:**
    
   ```xml
   <key>NSCameraUsageDescription</key>
