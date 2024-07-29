@@ -1,4 +1,4 @@
-# .Net MAUI QR Code Scanner
+# .Net MAUI QR - Barcode Scanner
 
 Bu proje, QR kodlarını tarayabilen ve taranan koda göre farklı sesler oynatabilen bir mobil uygulamadır. Uygulama, QR kodu içeriğine göre belirli ses dosyalarını çalar ve kullanıcıya QR kodun formatı ve değeri hakkında bilgi verir.
 
@@ -37,6 +37,21 @@ dotnet add package IAudioManager
 
 3) **Kamera Yönlendirme:**
 - Kullanıcı, kamera yönünü (ön/arka) değiştirebilir.
+
+## Kamera Erişimi İçin Gerekli İzinler:
+
+- **AndroidManifest.xml:**
+  
+  ```xml
+  <uses-permission android:name="android.permission.CAMERA" />
+  ```
+  
+  - **Info.plist:**
+   
+  ```xml
+  <key>NSCameraUsageDescription</key>
+  <string>This app needs access to the camera to take photos.</string>
+  ```
 
 ## MauiProgram.cs
 ```csharp
