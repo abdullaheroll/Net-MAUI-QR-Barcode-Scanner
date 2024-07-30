@@ -21,7 +21,7 @@ dotnet add package IAudioManager
 
 3) **Kaynak Dosyalarını Ekleyin:**
 - Resources/Images klasörüne qr1.png ve qr2.png görsellerini ekleyin.
-- Resources/Raq klasörüne sound_one.mp3, sound_two.mp3 ve default.mp3 ses dosyalarını ekleyin.
+- Resources/Raw klasörüne sound_one.mp3, sound_two.mp3 ve default.mp3 ses dosyalarını ekleyin.
 
 4) **Kod Yapılandırması:**
 - MainPage.xaml ve MainPage.xaml.cs dosyalarını aşağıdaki gibi düzenleyin.
